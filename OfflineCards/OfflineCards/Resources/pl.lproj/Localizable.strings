@@ -1,0 +1,59 @@
+/*
+  Localizable.strings (Polish)
+  OfflineCards
+*/
+
+// MARK: - CardListView
+"Cards" = "Karty";
+"Search by store name" = "Szukaj po nazwie";
+"Export Cards" = "Eksport";
+"Import Cards" = "Import";
+"Keep" = "Zachowaj";
+"Erase All" = "Usuń wszystkie";
+"Cancel" = "Anuluj";
+"Erase existing cards before importing?" = "Usunąć istniejące karty przed importem?";
+"Duplicates Found" = "Znaleziono duplikaty";
+"Overwrite" = "Nadpisz";
+"Skip" = "Pomiń";
+"%lld card(s) already exist:" = "%lld kart już istnieje:";
+"Error" = "Błąd";
+"OK" = "OK";
+"No Cards Yet" = "Brak kart";
+"Tap + to add your first card" = "Naciśnij + aby dodać kartę";
+"Failed to export cards" = "Nie udało się wyeksportować";
+"Failed to import cards" = "Nie udało się zaimportować";
+"Failed to select file" = "Nie udało się wybrać pliku";
+
+// MARK: - CardDetailView
+"Edit" = "Edytuj";
+"Delete Card" = "Usuń kartę";
+"Delete" = "Usuń";
+"Are you sure you want to delete this card? This action cannot be undone." = "Usunąć tę kartę? Tej akcji nie można cofnąć.";
+"Holder" = "Właściciel";
+"Holder:" = "Właściciel:";
+"Tap to view fullscreen" = "Naciśnij aby powiększyć";
+"Card Number" = "Numer karty";
+"Card Number:" = "Numer karty:";
+"Code Type:" = "Typ kodu:";
+"QR Code" = "Kod QR";
+"Barcode" = "Kod kreskowy";
+"Card Color:" = "Kolor:";
+"Photos" = "Zdjęcia";
+
+// MARK: - CardFormView
+"Card Information" = "Dane karty";
+"Store Name" = "Nazwa sklepu";
+"Holder Name (Optional)" = "Imię właściciela";
+"Display Options" = "Wyświetlanie";
+"Use QR Code" = "Kod QR";
+"Card Color" = "Kolor";
+"Add Photos" = "Dodaj zdjęcia";
+"Choose from Library" = "Z galerii";
+"Take Photo" = "Zrób zdjęcie";
+"Add Card" = "Dodaj kartę";
+"Edit Card" = "Edytuj kartę";
+"Save" = "Zapisz";
+"Camera access is required to take photos. Please enable it in Settings." = "Wymagany dostęp do aparatu. Włącz w Ustawieniach.";
+"Camera access is required to scan codes. Please enable it in Settings." = "Wymagany dostęp do aparatu do skanowania. Włącz w Ustawieniach.";
+"Point camera at QR code" = "Skieruj aparat na kod QR";
+"Point camera at barcode" = "Skieruj aparat na kod kreskowy";

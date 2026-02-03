@@ -1,0 +1,59 @@
+/*
+  Localizable.strings (German)
+  OfflineCards
+*/
+
+// MARK: - CardListView
+"Cards" = "Karten";
+"Search by store name" = "Nach Name suchen";
+"Export Cards" = "Export";
+"Import Cards" = "Import";
+"Keep" = "Behalten";
+"Erase All" = "Alle löschen";
+"Cancel" = "Abbrechen";
+"Erase existing cards before importing?" = "Vorhandene Karten vor dem Import löschen?";
+"Duplicates Found" = "Duplikate gefunden";
+"Overwrite" = "Überschreiben";
+"Skip" = "Überspringen";
+"%lld card(s) already exist:" = "%lld Karten existieren bereits:";
+"Error" = "Fehler";
+"OK" = "OK";
+"No Cards Yet" = "Keine Karten";
+"Tap + to add your first card" = "Tippen Sie + um eine Karte hinzuzufügen";
+"Failed to export cards" = "Export fehlgeschlagen";
+"Failed to import cards" = "Import fehlgeschlagen";
+"Failed to select file" = "Dateiauswahl fehlgeschlagen";
+
+// MARK: - CardDetailView
+"Edit" = "Bearbeiten";
+"Delete Card" = "Karte löschen";
+"Delete" = "Löschen";
+"Are you sure you want to delete this card? This action cannot be undone." = "Diese Karte löschen? Kann nicht rückgängig gemacht werden.";
+"Holder" = "Inhaber";
+"Holder:" = "Inhaber:";
+"Tap to view fullscreen" = "Tippen zum Vergrößern";
+"Card Number" = "Kartennummer";
+"Card Number:" = "Kartennummer:";
+"Code Type:" = "Codetyp:";
+"QR Code" = "QR-Code";
+"Barcode" = "Strichcode";
+"Card Color:" = "Farbe:";
+"Photos" = "Fotos";
+
+// MARK: - CardFormView
+"Card Information" = "Kartendaten";
+"Store Name" = "Geschäftsname";
+"Holder Name (Optional)" = "Name des Inhabers";
+"Display Options" = "Anzeige";
+"Use QR Code" = "QR-Code";
+"Card Color" = "Farbe";
+"Add Photos" = "Fotos hinzufügen";
+"Choose from Library" = "Aus Galerie";
+"Take Photo" = "Foto aufnehmen";
+"Add Card" = "Karte hinzufügen";
+"Edit Card" = "Karte bearbeiten";
+"Save" = "Speichern";
+"Camera access is required to take photos. Please enable it in Settings." = "Kamerazugriff erforderlich. Bitte in Einstellungen aktivieren.";
+"Camera access is required to scan codes. Please enable it in Settings." = "Kamerazugriff zum Scannen erforderlich. Bitte in Einstellungen aktivieren.";
+"Point camera at QR code" = "Kamera auf QR-Code richten";
+"Point camera at barcode" = "Kamera auf Strichcode richten";

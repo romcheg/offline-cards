@@ -1,0 +1,40 @@
+{
+  "name": "Offline Cards",
+  "identifier": "com.offlinecards.source",
+  "subtitle": "Store discount cards offline",
+  "description": "Personal AltStore source for Offline Cards app",
+  "iconURL": "https://github.com/romcheg/offline-cards/releases/latest/download/icon.png",
+  "headerURL": "",
+  "website": "https://github.com/romcheg/offline-cards",
+  "tintColor": "007AFF",
+  "featuredApps": [],
+  "apps": [
+    {
+      "name": "Offline Cards",
+      "bundleIdentifier": "com.offlinecards.OfflineCards",
+      "developerName": "Roman Prykhodchenko",
+      "subtitle": "Store discount cards offline",
+      "localizedDescription": "Store your discount and loyalty cards offline on your iPhone. Features include barcode/QR code display with automatic brightness, card photos, import/export, and quick search.",
+      "iconURL": "https://github.com/romcheg/offline-cards/releases/latest/download/icon.png",
+      "tintColor": "007AFF",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-02-03",
+          "size": 0,
+          "downloadURL": "https://github.com/romcheg/offline-cards/releases/latest/download/OfflineCards.ipa",
+          "localizedDescription": "Initial release",
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Camera is used to scan barcodes and take photos of your cards"
+        }
+      }
+    }
+  ],
+  "news": []
+}

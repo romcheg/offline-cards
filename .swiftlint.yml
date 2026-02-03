@@ -1,0 +1,60 @@
+# SwiftLint Configuration
+
+# Rule Configuration
+disabled_rules: []
+
+opt_in_rules:
+  - empty_count
+  - empty_string
+  - explicit_init
+  - fatal_error_message
+  - force_unwrapping
+  - multiline_parameters
+  - sorted_imports
+
+# Exclusions
+excluded:
+  - Pods
+  - .build
+  - DerivedData
+  - OfflineCards.xcodeproj
+
+# Line length limits
+line_length:
+  warning: 120
+  error: 200
+
+# File length limits
+file_length:
+  warning: 500
+  error: 1000
+
+# Type length limits
+type_body_length:
+  warning: 300
+  error: 500
+
+# Function length limits
+function_body_length:
+  warning: 50
+  error: 100
+
+# Identifier naming
+identifier_name:
+  min_length:
+    warning: 2
+  max_length:
+    warning: 50
+
+# Cyclomatic complexity
+cyclomatic_complexity:
+  warning: 15
+  error: 25
+
+# Nesting limits
+nesting:
+  type_level:
+    warning: 2
+
+# Reporter
+reporter: "xcode"

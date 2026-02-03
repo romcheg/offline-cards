@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xcodebuild:*)",
+      "Bash(swiftlint lint:*)",
+      "Bash(xcodegen generate:*)",
+      "Bash(swiftlint:*)",
+      "Bash(make lint:*)",
+      "Bash(make run:*)",
+      "Bash(make build:*)",
+      "Bash(make test-all:*)",
+      "Bash(ls:*)",
+      "Bash(sips:*)",
+      "Bash(make:*)",
+      "Bash(xcrun simctl:*)",
+      "Bash(xcrun xctrace:*)",
+      "Bash(security find-identity:*)",
+      "Bash(defaults read:*)",
+      "Bash(open:*)",
+      "Bash(xcrun devicectl:*)",
+      "Bash(xcrun xcresulttool:*)",
+      "Bash(git remote get-url:*)",
+      "Bash(chmod:*)",
+      "Bash(gh release:*)",
+      "Bash(gh repo view:*)"
+    ]
+  }
+}

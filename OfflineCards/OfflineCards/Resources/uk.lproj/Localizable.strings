@@ -1,0 +1,59 @@
+/*
+  Localizable.strings (Ukrainian)
+  OfflineCards
+*/
+
+// MARK: - CardListView
+"Cards" = "Картки";
+"Search by store name" = "Пошук за назвою";
+"Export Cards" = "Експорт";
+"Import Cards" = "Імпорт";
+"Keep" = "Залишити";
+"Erase All" = "Видалити всі";
+"Cancel" = "Скасувати";
+"Erase existing cards before importing?" = "Видалити наявні картки перед імпортом?";
+"Duplicates Found" = "Знайдено дублікати";
+"Overwrite" = "Перезаписати";
+"Skip" = "Пропустити";
+"%lld card(s) already exist:" = "%lld карток вже є:";
+"Error" = "Помилка";
+"OK" = "OK";
+"No Cards Yet" = "Карток немає";
+"Tap + to add your first card" = "Натисніть + щоб додати картку";
+"Failed to export cards" = "Не вдалося експортувати";
+"Failed to import cards" = "Не вдалося імпортувати";
+"Failed to select file" = "Не вдалося обрати файл";
+
+// MARK: - CardDetailView
+"Edit" = "Змінити";
+"Delete Card" = "Видалити картку";
+"Delete" = "Видалити";
+"Are you sure you want to delete this card? This action cannot be undone." = "Видалити цю картку? Цю дію не можна скасувати.";
+"Holder" = "Власник";
+"Holder:" = "Власник:";
+"Tap to view fullscreen" = "Натисніть для збільшення";
+"Card Number" = "Номер картки";
+"Card Number:" = "Номер картки:";
+"Code Type:" = "Тип коду:";
+"QR Code" = "QR-код";
+"Barcode" = "Штрих-код";
+"Card Color:" = "Колір:";
+"Photos" = "Фото";
+
+// MARK: - CardFormView
+"Card Information" = "Дані картки";
+"Store Name" = "Назва магазину";
+"Holder Name (Optional)" = "Імʼя власника";
+"Display Options" = "Відображення";
+"Use QR Code" = "QR-код";
+"Card Color" = "Колір";
+"Add Photos" = "Додати фото";
+"Choose from Library" = "З галереї";
+"Take Photo" = "Зробити фото";
+"Add Card" = "Додати картку";
+"Edit Card" = "Змінити картку";
+"Save" = "Зберегти";
+"Camera access is required to take photos. Please enable it in Settings." = "Потрібен доступ до камери. Увімкніть у налаштуваннях.";
+"Camera access is required to scan codes. Please enable it in Settings." = "Потрібен доступ до камери для сканування. Увімкніть у налаштуваннях.";
+"Point camera at QR code" = "Наведіть камеру на QR-код";
+"Point camera at barcode" = "Наведіть камеру на штрих-код";

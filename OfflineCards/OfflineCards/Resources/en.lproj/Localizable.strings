@@ -1,0 +1,59 @@
+/*
+  Localizable.strings (English)
+  OfflineCards
+*/
+
+// MARK: - CardListView
+"Cards" = "Cards";
+"Search by store name" = "Search by store name";
+"Export Cards" = "Export";
+"Import Cards" = "Import";
+"Keep" = "Keep";
+"Erase All" = "Erase All";
+"Cancel" = "Cancel";
+"Erase existing cards before importing?" = "Erase existing cards before importing?";
+"Duplicates Found" = "Duplicates Found";
+"Overwrite" = "Overwrite";
+"Skip" = "Skip";
+"%lld card(s) already exist:" = "%lld card(s) already exist:";
+"Error" = "Error";
+"OK" = "OK";
+"No Cards Yet" = "No Cards Yet";
+"Tap + to add your first card" = "Tap + to add your first card";
+"Failed to export cards" = "Failed to export cards";
+"Failed to import cards" = "Failed to import cards";
+"Failed to select file" = "Failed to select file";
+
+// MARK: - CardDetailView
+"Edit" = "Edit";
+"Delete Card" = "Delete Card";
+"Delete" = "Delete";
+"Are you sure you want to delete this card? This action cannot be undone." = "Are you sure you want to delete this card? This action cannot be undone.";
+"Holder" = "Holder";
+"Holder:" = "Holder:";
+"Tap to view fullscreen" = "Tap to view fullscreen";
+"Card Number" = "Card Number";
+"Card Number:" = "Card Number:";
+"Code Type:" = "Code Type:";
+"QR Code" = "QR Code";
+"Barcode" = "Barcode";
+"Card Color:" = "Card Color:";
+"Photos" = "Photos";
+
+// MARK: - CardFormView
+"Card Information" = "Card Information";
+"Store Name" = "Store Name";
+"Holder Name (Optional)" = "Holder Name (Optional)";
+"Display Options" = "Display Options";
+"Use QR Code" = "Use QR Code";
+"Card Color" = "Card Color";
+"Add Photos" = "Add Photos";
+"Choose from Library" = "Choose from Library";
+"Take Photo" = "Take Photo";
+"Add Card" = "Add Card";
+"Edit Card" = "Edit Card";
+"Save" = "Save";
+"Camera access is required to take photos. Please enable it in Settings." = "Camera access is required to take photos. Please enable it in Settings.";
+"Camera access is required to scan codes. Please enable it in Settings." = "Camera access is required to scan codes. Please enable it in Settings.";
+"Point camera at QR code" = "Point camera at QR code";
+"Point camera at barcode" = "Point camera at barcode";
