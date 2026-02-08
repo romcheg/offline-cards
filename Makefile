@@ -214,9 +214,12 @@ endif
 		'.apps[0].versions[0].version = $$ver | .apps[0].versions[0].size = ($$size | tonumber) | .apps[0].versions[0].date = $$date' \
 		altstore/source.json > altstore/source.json.tmp && mv altstore/source.json.tmp altstore/source.json
 	@echo "$(GREEN)✓ source.json updated$(RESET)"
-	@# Commit source.json changes (docs/source.json is a symlink)
+	@# Sync to docs for GitHub Pages
+	@cp altstore/source.json docs/source.json
+	@echo "$(GREEN)✓ docs/source.json synced$(RESET)"
+	@# Commit source.json changes
 	@echo "$(YELLOW)Committing source.json...$(RESET)"
-	@git add altstore/source.json
+	@git add altstore/source.json docs/source.json
 	@git commit -m "chore: update source.json for v$(VERSION)" || echo "$(YELLOW)No changes to commit$(RESET)"
 	@git push origin master
 	@echo "$(GREEN)✓ Changes pushed$(RESET)"
