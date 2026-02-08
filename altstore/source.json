@@ -21,8 +21,8 @@
       "versions": [
         {
           "version": "1.0",
-          "date": "2026-02-03",
-          "size": 0,
+          "date": "2026-02-08",
+          "size": 2023011,
           "downloadURL": "https://github.com/romcheg/offline-cards/releases/latest/download/OfflineCards.ipa",
           "localizedDescription": "Initial release",
           "minOSVersion": "17.0"
