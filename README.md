@@ -26,7 +26,7 @@ For iPhone users in the EU:
 
 1. Install [AltStore PAL](https://altstore.io) on your iPhone
 2. Open AltStore PAL → Sources → Add Source
-3. Enter: `https://raw.githubusercontent.com/romcheg/offline-cards/master/altstore/source.json`
+3. Enter: `https://romcheg.github.io/offline-cards/source.json`
 4. Find "Offline Cards" and tap Install
 
 ## Building from Source

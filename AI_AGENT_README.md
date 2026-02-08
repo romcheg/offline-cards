@@ -534,7 +534,7 @@ The app is distributed via AltStore using a self-hosted source.
 
 ### Source URL
 ```
-https://raw.githubusercontent.com/romcheg/offline-cards/master/altstore/source.json
+https://romcheg.github.io/offline-cards/source.json
 ```
 
 ### Files

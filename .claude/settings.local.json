@@ -22,7 +22,9 @@
       "Bash(git remote get-url:*)",
       "Bash(chmod:*)",
       "Bash(gh release:*)",
-      "Bash(gh repo view:*)"
+      "Bash(gh repo view:*)",
+      "Bash(gh api:*)",
+      "Bash(ln:*)"
     ]
   }
 }
