@@ -54,8 +54,12 @@ OfflineCards/
 │   ├── BarcodeServiceTests.swift
 │   ├── ImportExportServiceTests.swift
 │   └── AppDelegateTests.swift         # Orientation locking tests
-└── OfflineCardsUITests/               # UI/E2E tests
-    └── OfflineCardsUITests.swift
+├── OfflineCardsUITests/               # UI/E2E tests
+│   └── OfflineCardsUITests.swift
+└── altstore/                          # AltStore distribution
+    ├── source.json                    # AltStore source manifest
+    ├── ExportOptions.plist            # IPA export configuration (generated)
+    └── ExportOptions.plist.template   # Template for ExportOptions
 ```
 
 ## Key Architecture Patterns
@@ -306,6 +310,12 @@ Location: `OfflineCards/OfflineCards/Resources/Assets.xcassets/AppIcon.appiconse
 - `make generate` - Regenerate Xcode project from project.yml
 - `make verify` - Run linting + all tests
 
+**AltStore Distribution**:
+- `make archive` - Archive the app for distribution
+- `make export-ipa` - Export IPA (runs archive first)
+- `make release` - Prepare release artifacts (IPA + icon) locally
+- `make publish VERSION=x.y.z` - Full automated release to GitHub
+
 **Configuration**:
 - Uses `-allowProvisioningUpdates` for automatic code signing
 
@@ -518,6 +528,66 @@ Location: `.swiftlint.yml`
 6. **Brightness Control**: Only for barcode fullscreen
 7. **Export Completeness**: JSON must include all data (photos as base64)
 
+## AltStore Distribution
+
+The app is distributed via AltStore using a self-hosted source.
+
+### Source URL
+```
+https://raw.githubusercontent.com/romcheg/offline-cards/master/altstore/source.json
+```
+
+### Files
+
+**altstore/source.json**:
+- AltStore source manifest
+- Contains app metadata, version info, download URLs
+- Points to GitHub releases for IPA and icon
+- Updated automatically by `make publish`
+
+**altstore/ExportOptions.plist**:
+- Generated from template during build
+- Uses "debugging" method for sideloading compatibility
+- Team ID loaded from `.env`
+
+**altstore/ExportOptions.plist.template**:
+- Template with `{{DEVELOPMENT_TEAM}}` placeholder
+- Processed by `make generate-export-plist`
+
+### Release Process
+
+**Automated (recommended)**:
+```bash
+make publish VERSION=1.0.0
+```
+
+This command:
+1. Builds and archives the app
+2. Exports IPA with correct signing
+3. Updates `source.json` with version, size, date
+4. Commits and pushes `source.json`
+5. Creates GitHub release with auto-generated notes (from conventional commits)
+6. Uploads IPA and icon to the release
+
+**Requirements**:
+- `jq` - JSON processor (for updating source.json)
+- `gh` - GitHub CLI (authenticated)
+- Valid `.env` with `DEVELOPMENT_TEAM`
+
+### Installing via AltStore
+
+Users add the source URL in AltStore:
+1. Open AltStore → Sources tab → + button
+2. Enter source URL
+3. Find "Offline Cards" in Browse tab → Install
+
+### Direct Sideload
+
+For development/testing without publishing:
+1. Run `make release` to build IPA
+2. Transfer `build/release/OfflineCards.ipa` to iPhone
+3. Open in AltStore → Install
+
 ## Future AI Agent Guidelines
 
 When making changes:
@@ -544,4 +614,4 @@ When making changes:
 
 ---
 
-Last updated: 2026-02-03 (Updated: Moved sensitive data to .env, added environment configuration docs)
+Last updated: 2026-02-08 (Added: AltStore distribution documentation, publish automation)
