@@ -216,10 +216,11 @@ endif
 	@echo "$(GREEN)✓ source.json updated$(RESET)"
 	@# Sync to docs for GitHub Pages
 	@cp altstore/source.json docs/source.json
-	@echo "$(GREEN)✓ docs/source.json synced$(RESET)"
-	@# Commit source.json changes
-	@echo "$(YELLOW)Committing source.json...$(RESET)"
-	@git add altstore/source.json docs/source.json
+	@cp build/release/icon.png docs/icon.png
+	@echo "$(GREEN)✓ docs/ synced (source.json, icon.png)$(RESET)"
+	@# Commit changes
+	@echo "$(YELLOW)Committing changes...$(RESET)"
+	@git add altstore/source.json docs/source.json docs/icon.png
 	@git commit -m "chore: update source.json for v$(VERSION)" || echo "$(YELLOW)No changes to commit$(RESET)"
 	@git push origin master
 	@echo "$(GREEN)✓ Changes pushed$(RESET)"
@@ -228,8 +229,7 @@ endif
 	@gh release create v$(VERSION) \
 		--title "v$(VERSION)" \
 		--generate-notes \
-		build/release/OfflineCards.ipa \
-		build/release/icon.png
+		build/release/OfflineCards.ipa
 	@echo ""
 	@echo "$(GREEN)✓ Release v$(VERSION) published!$(RESET)"
 	@echo ""

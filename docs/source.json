@@ -3,8 +3,7 @@
   "identifier": "com.offlinecards.source",
   "subtitle": "Store discount cards offline",
   "description": "Personal AltStore source for Offline Cards app",
-  "iconURL": "https://github.com/romcheg/offline-cards/releases/latest/download/icon.png",
-  "headerURL": "",
+  "iconURL": "https://romcheg.github.io/offline-cards/icon.png",
   "website": "https://github.com/romcheg/offline-cards",
   "tintColor": "007AFF",
   "featuredApps": [],
@@ -15,7 +14,7 @@
       "developerName": "Roman Prykhodchenko",
       "subtitle": "Store discount cards offline",
       "localizedDescription": "Store your discount and loyalty cards offline on your iPhone. Features include barcode/QR code display with automatic brightness, card photos, import/export, and quick search.",
-      "iconURL": "https://github.com/romcheg/offline-cards/releases/latest/download/icon.png",
+      "iconURL": "https://romcheg.github.io/offline-cards/icon.png",
       "tintColor": "007AFF",
       "screenshotURLs": [],
       "versions": [
